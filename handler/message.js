@@ -50,6 +50,7 @@ const msgHandler = async (client = new WAConnection()) => {
             // Validator & Configuration
             const botNumber = client.user.jid
             const ownerNumber = [`${config.ownerNumber}@s.whatsapp.net`]
+            const modsNumber = [`${config.moderator}@s.whatsapp.net`]
             const isGroup = from.endsWith('g.us')
             const sender = isGroup ? mek.participant : mek.key.remoteJid
             const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -60,6 +61,7 @@ const msgHandler = async (client = new WAConnection()) => {
             const isBotGroupAdmin = groupAdmin.includes(botNumber) || false
             const isGroupAdmin = groupAdmin.includes(sender) || false
             const isOwner = ownerNumber.includes(sender)
+            const isMods = modsNumber.include(sender)
             let mentioned
             // Check if is mentioned or not
             try {
