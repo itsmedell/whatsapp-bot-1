@@ -1,0 +1,25 @@
+{
+  "name": "whatsapp-bot",
+  "version": "0.0.1",
+  "description": "Simple WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lendradev/whatsapp-bot.git"
+  },
+  "author": "lendradev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lendradev/whatsapp-bot/issues"
+  },
+  "homepage": "https://github.com/lendradev/whatsapp-bot#readme",
+  "dependencies": {
+    "@adiwajshing/baileys": "github:adiwajshing/baileys",
+    "@discordjs/collection": "^0.2.0",
+    "cfonts": "^2.9.3",
+    "chalk": "^4.1.1"
+  }
+}

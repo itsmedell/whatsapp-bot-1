@@ -1,0 +1,7 @@
+[
+    {
+        "name": "menu",
+        "aliases": ["help", "guide"],
+        "category": "bot"
+    }
+]
